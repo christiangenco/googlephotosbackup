@@ -29,7 +29,7 @@ else
   print "http://localhost:3000/oauth?code="
   client.code = gets.chomp
   client.fetch_access_token!
-  puts "Add this to your .bashrc:"
+  puts "Add this to your .bashrc or .env:"
   puts "GOOGLE_PHOTOS_BACKUP_REFRESH_TOKEN=\"#{client.refresh_token}\""
 end
 
