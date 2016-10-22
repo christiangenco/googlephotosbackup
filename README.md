@@ -60,10 +60,12 @@ $ ruby generate_photodump.rb > dump.jsona
 $ ruby download_photodump.rb dump.jsona
 ```
 
-Photo metadata is stored as json objects in dump.jsona, and looks like this:
+Photo metadata is stored as json objects in dump.jsona.
+
+Each line looks like this:
 
 ```json
 {"src":"https://lh3.googleusercontent.com/.../s4032/IMG_5533.JPG","id":"634319...","etag":"\"YDkqe.\"","height":3024,"width":4032,"size":1604103,"title":"IMG_5533.JPG","timestamp":1476823823,"checksum":"","summary":"","latitude":null,"longitude":null,"exif":{"fstop":2.2,"make":"Apple","model":"iPhone 6s","exposure":0.008333334,"flash":false,"focal_length":4.15,"iso":40,"time":1476805823,"image_unique_id":"f924185dc420000000000000000"},"album":{"id":"1000000082","name":"InstantUpload"}}
 ```
 
-Actual files are stored by their `id` in the `PHOTODUMPROOT` directory.
+Files are stored by their `id` in the `PHOTODUMPROOT` directory.
